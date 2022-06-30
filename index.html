@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Delivery</title>
+    <link href="shopping-cart.html" hreflang="en" rel="alternate">
+    <link rel="stylesheet" href="assets/styles/app.css">
+    <link rel="stylesheet" href="assets/styles/app2.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script defer>
+    function show(shown, hidden) {
+      document.getElementById(shown).style.display='block';
+      document.getElementById(hidden).style.display='none';
+      return false;
+    }
+    </script>
+  <script src="assets/scripts/calcCartPrice.js" defer></script>
+  <script src="assets/scripts/app.js" defer></script>
+  <script src="assets/scripts/counter.js" defer></script>
+  <script src="assets/scripts/cart.js" defer></script>
+  <script src="assets/scripts/toggleCartStatus.js" defer></script>
+  <script src="assets/scripts/submit.js" defer></script>
+  <script src="assets/scripts/shop.js" defer></script>
+  </head> 
+  <body>
+
+    <div id="Page1">
+      <nav class="navbar navbar-expand-lg sticky-top navbar-dark" >
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse">
+            <div class="navbar-nav ">
+              <div class ="page-title">
+                <a href="#Page2" onclick="return show('Page1','Page2');">Shop</a>
+              </div>
+              <div class ="page-title">
+                <a href="#Page1" onclick="return show('Page2','Page1');">Shopping Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+  
+      <div class="div text-white" >
+        <div class="row">
+          <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+          <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+            <h1>GET DELICIOUS FOOD AT YOUR DOORSTEPS</h1>
+            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum diam lacus, magnis. Diam tempus lorem laoreet mattis orci sagittis velit. Amet scelerisque diam non quis amet adipiscing.</h5>
+            <div class="col-lg-7 col-md-6 col-sm-6 col-xs-12">
+            <button type="button" class="btn btn-lg btn-outline-warning"><a href="#shop">Order now</a></button>
+          </div>
+          </div>
+          <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12"><img src="assets/source/burger.png" class="img-fluid"></div>
+          <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+        </div>
+      </div>
+  
+      <div class="div">
+        <div class="row text-white text-center">
+         <div class="col-lg-3 col-md-3 ">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  ">
+              <div class="col-lg-12 col-md-12 col-sm-10 col-xs-10" >
+                <h3 id ="shops">Shops:</h3>
+                <button value="McDonalds" class="button btn-block btn-active btn-shop">McDonalds</button>
+                <button value="Italiano" class="button btn-block btn-shop">Italiano</button>
+                <button value="Sweeties" class="button btn-block btn-shop">Swetties</button>
+                <button value="Sandwiches" class="button btn-block btn-shop">Sandwiches</button>
+              </div>
+            </div>
+          </div>
+          
+        <div class="col-lg-1 col-md-1"></div>
+        
+        <div class="col-lg-8 col-md-8" id="shop">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div class="div-1" data-id='01'>
+                <img src="assets/source/burger-2.png" class="img-fluid product-img" alt="Cheese and Meat ">
+                <div class='product-item__content'>
+                  <h2 class="item-title">Cheese and Meat</h2>
+                  <h3 class="price__currency">19.99$</h3>
+                  <div class="details-wrapper">
+                    <div class="items counter-wrapper">
+                      <div class="items__control" data-action="minus">-</div>
+                      <div class="items__current" data-counter>1</div>
+                      <div class="items__control" data-action="plus">+</div>
+                    </div>
+                  </div>
+                  <button data-cart type ="button" class="button btn-block">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div class="div-1" data-id='02'>
+                <img src="assets/source/burger-4.png" class="img-fluid product-img" alt="Roal Burger">
+                <div class='product-item__content'>
+                  <h2 class="item-title">Roal Burger</h2>
+                  <h3 class="price__currency">29.99$</h3>
+                  <div class="details-wrapper">
+                    <div class="items counter-wrapper">
+                      <div class="items__control" data-action="minus">-</div>
+                      <div class="items__current" data-counter>1</div>
+                      <div class="items__control" data-action="plus">+</div>
+                    </div>
+                  </div>
+                  <button data-cart type ="button" class="button btn-block">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div class="div-1" data-id='03'>
+               <img src="assets/source/burger-3.png" class="img-fluid product-img" alt="Hot Dogs">
+               <div class='product-item__content'>
+                <h2 class="item-title">Hot Dogs</h2>
+                <h3 class="price__currency">17.99$</h3>
+                <div class="details-wrapper">
+                  <div class="items counter-wrapper">
+                    <div class="items__control" data-action="minus">-</div>
+                    <div class="items__current" data-counter>1</div>
+                    <div class="items__control" data-action="plus">+</div>
+                  </div>
+                </div>
+                <button data-cart type ="button" class="button btn-block">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="div-1" data-id='04'>
+              <img src="assets/source/burger-1.png" class="img-fluid product-img" alt="Big Mac Burger">
+              <div class='product-item__content'>
+                <h2 class="item-title">Big Mac Burger</h2>
+                <h3 class="price__currency">29.99$</h3>
+                <div class="details-wrapper">
+                  <div class="items counter-wrapper">
+                    <div class="items__control" data-action="minus">-</div>
+                    <div class="items__current" data-counter>1</div>
+                    <div class="items__control" data-action="plus">+</div>
+                  </div>
+                </div>
+                <button data-cart type ="button" class="button btn-block">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="div-1" data-id='05'>
+              <img src="assets/source/burger-5.png" class="img-fluid product-img" alt="Chicken Burger">
+              <div class='product-item__content'>
+                <h2 class="item-title">Chicken Burger</h2>
+                <h3 class="price__currency">44.99$</h3>
+                <div class="details-wrapper">
+                  <div class="items counter-wrapper">
+                    <div class="items__control" data-action="minus">-</div>
+                    <div class="items__current" data-counter>1</div>
+                    <div class="items__control" data-action="plus">+</div>
+                  </div>
+                </div>
+                <button data-cart type ="button" class="button btn-block">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+            <div class="div-1" data-id='06'>
+              <img src="assets/source/burger-6.png" class="img-fluid product-img" alt="American Burger">
+              <div class='product-item__content'>
+                <h2 class="item-title">American Burger</h2>
+                <h3 class="price__currency">44.99$</h3>
+                <div class="details-wrapper">
+                  <div class="items counter-wrapper">
+                    <div class="items__control" data-action="minus">-</div>
+                    <div class="items__current" data-counter>1</div>
+                    <div class="items__control" data-action="plus">+</div>
+                  </div>
+                </div>
+                <button data-cart type ="button" class="button btn-block">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" ></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="backdrop">
+    <div class="modal card" id="view-cart">
+      <div class="modal__content">
+        <h3>You order some items. Would you like to go to shopping cart?</h3>
+      </div>
+      <div class="modal__actions">
+        <button class="btn btn--passive">Cancel</button>
+        <button class="btn btn--success"><a href="#Page1" onclick="return show('Page2','Page1');">OK</a></button>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+<div id="Page2" style="display:none">
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark" >
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse">
+        <div class="navbar-nav ">
+          <div class ="page-title">
+            <a href="#Page2" onclick="return show('Page1','Page2');">Shop</a>
+          </div>
+          <div class ="page-title">
+            <a href="#Page1" onclick="return show('Page2','Page1');">Shopping Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="card mb-4">
+    <div class="card-body">
+      <h4 class="card-title">Your order</h4>
+      <div data-cart-empty class="alert alert-secondary" role="alert"> The shopping cart is empty! </div>
+  
+      <div class="cart-wrapper"></div>
+  
+      <div class="cart-total">
+        <p data-cart-delivery class="none">
+          <span class="h5">Delivery:</span>
+          <span class="delivery-cost">5 $</span><br>
+          <span class="small">Free delivery on order over 30$</span>
+        </p>
+        <p>
+          <span class="h5">Total:</span> 
+          <span class="total-price">0</span>
+          <span class="rouble">$</span>
+        </p>
+      </div>
+  
+    </div>
+    <div id="order-form" class="card-body border-top none">
+      <h5 class="card-title">Place an order</h5>
+      <form>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Your telephone number">
+          <input type="email" id="email" name ="email" class="form-control" placeholder="Your e-mail">
+          <input type="text" class="form-control" placeholder="Your address">
+        </div>
+        <input type="submit" class="btn btn-primary" id="submitBtn"></button>
+      </form>
+    </div>
+  </div>
+  
+</div>
+
+<div id="backdrop">
+  <div class="modal card" id="view-cart">
+    <div class="modal__content">
+      <h3>Do you confirm this order?</h3>
+    </div>
+    <div class="modal__actions">
+      <button class="btn btn--passive">Cancel</button>
+      <button class="btn btn--confirm">Confirm</button>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>

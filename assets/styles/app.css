@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+html{
+  font-family: sans-serif;
+  background-color: #000935;
+}
+
+.page-title{
+  margin-left: 20px;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+}
+.div{
+  background-color: #000935;
+  padding: 50px;
+}
+
+.div-1{
+  border: white 1px solid;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.div-2{
+  border: white 1px solid;
+  background-color: #000935;
+  color: white;
+  border-radius: 30px;
+  margin-top: 100px;
+  padding: 100px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #540075;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
+}
+
+.btn-lg {
+  background-color: #79BD03;
+  border-radius: 50px;
+  font-size:1.5vw;
+}
+
+.navbar{
+  background-color: #000935;
+  font-size: 2vw;
+}
+
+
+header h1 {
+  color: white;
+  font-size: 2rem;
+}
+
+.button {
+  font-size:1.5vw;
+  padding: 10px 10px 10px 10px;
+  width: 180px;
+  background-color: #79BD03;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin: 10px 10px 10px 10px;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+}
+.button-onclick{
+  background-color:rgb(255, 179, 0);
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover{
+  background:rgb(255, 0, 111);
+}
+.btn-active {
+  background:rgb(255, 179, 0);
+  border-color:yellow;
+  display: block;
+}
+
+.img-fluid{
+  margin-top: 20px;
+}
+
+#backdrop.visible {
+  display: block;
+  pointer-events: all;
+}
+
+#entry-text p {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;  
+  background-color:#000935;
+}
+
+.shopping{
+  background-color: #000935;
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+
+.cart {
+  margin: 5rem 2rem;
+  border: 2px solid #540075;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #540075;
+}
+
+.product-list {
+  list-style: none;
+  margin: 0 2rem;
+  padding: 0;
+}
+
+.product-item {
+  margin: 2rem auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  width: 50rem;
+  max-width: 90%;
+}
+
+.product-item img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.product-item__content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.product-item h2,
+.product-item h3 {
+  margin: 0 0 1rem 0;
+}
